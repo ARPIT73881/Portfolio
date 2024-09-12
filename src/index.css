@@ -1,0 +1,197 @@
+@import url('https://fonts.cdnfonts.com/css/general-sans');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #010103;
+  font-family: 'General Sans', sans-serif;
+}
+
+@layer utilities {
+  .c-space {
+    @apply px-5 sm:px-10;
+  }
+
+  .head-text {
+    @apply text-gray_gradient text-3xl font-semibold sm:text-4xl;
+  }
+
+  .nav-ul {
+    @apply relative z-20 flex flex-col items-center gap-4 sm:flex-row md:gap-6;
+  }
+
+  .nav-li {
+    @apply py-2 font-generalsans text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5 max-sm:hover:bg-black-500;
+  }
+
+  .nav-li_a {
+    @apply text-lg transition-colors hover:text-white md:text-base;
+  }
+
+  .nav-sidebar {
+    @apply absolute left-0 right-0 z-20 mx-auto block overflow-hidden bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out sm:hidden;
+  }
+
+  .text-gray_gradient {
+    @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
+  }
+
+  /* button component */
+  .btn {
+    @apply mx-auto flex cursor-pointer items-center justify-center gap-4 rounded-md bg-black-300 p-3 text-white transition-all active:scale-95;
+  }
+
+  .btn-ping {
+    @apply absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75;
+  }
+
+  .btn-ping_dot {
+    @apply relative inline-flex h-3 w-3 rounded-full bg-green-500;
+  }
+
+  /* hero section */
+  .hero_tag {
+    @apply text-center font-generalsans text-3xl font-black !leading-normal sm:text-4xl lg:text-5xl;
+  }
+
+  /* about section */
+  .grid-container {
+    @apply flex h-full w-full flex-col gap-5 rounded-lg border border-black-300 bg-black-200 p-4 sm:p-7;
+  }
+
+  .grid-headtext {
+    @apply mb-2 font-generalsans text-xl font-semibold text-white;
+  }
+
+  .grid-subtext {
+    @apply font-generalsans text-base text-[#afb0b6];
+  }
+
+  .copy-container {
+    @apply flex cursor-pointer items-center justify-center gap-3;
+  }
+
+  /* projects section  */
+  .arrow-btn {
+    @apply arrow-gradient h-10 w-10 cursor-pointer rounded-full p-3 transition-all active:scale-95;
+  }
+
+  .tech-logo {
+    @apply flex h-10 w-10 items-center justify-center rounded-md bg-neutral-100 bg-opacity-10 p-2 backdrop-blur-lg backdrop-filter;
+  }
+
+  /* clients section */
+  .client-container {
+    @apply mt-12 grid grid-cols-1 gap-5 md:grid-cols-2;
+  }
+
+  .client-review {
+    @apply col-span-1 rounded-lg bg-black-300 bg-opacity-50 p-5 md:p-10;
+  }
+
+  .client-content {
+    @apply mt-7 flex flex-col items-start justify-between gap-5 lg:flex-row lg:items-center;
+  }
+
+  /*  work experience section */
+  .work-container {
+    @apply mt-12 grid grid-cols-1 gap-5 lg:grid-cols-3;
+  }
+
+  .work-canvas {
+    @apply col-span-1 rounded-lg border border-black-300 bg-black-200;
+  }
+
+  .work-content {
+    @apply col-span-2 rounded-lg border border-black-300 bg-black-200;
+  }
+
+  .work-content_container {
+    @apply grid cursor-pointer grid-cols-[auto_1fr] items-start gap-5 rounded-lg px-2.5 transition-all duration-500 ease-in-out hover:bg-black-300 sm:px-5;
+  }
+
+  .work-content_logo {
+    @apply h-16 w-16 rounded-3xl bg-black-600 p-2;
+  }
+
+  .work-content_bar {
+    @apply mt-4 h-full w-0.5 flex-1 bg-black-300 group-last:hidden group-hover:bg-black-500;
+  }
+
+  /* contact section */
+  .contact-container {
+    @apply relative z-10 mt-12 max-w-xl px-5 sm:px-10;
+  }
+
+  .field-label {
+    @apply text-lg text-white-600;
+  }
+
+  .field-input {
+    @apply min-h-14 w-full rounded-lg bg-black-300 px-5 py-2 text-lg text-white-800 shadow-2xl shadow-black-200 placeholder:text-white-500 hover:shadow-black-100 focus:outline-none;
+  }
+
+  .field-btn {
+    @apply flex min-h-12 items-center justify-center gap-3 rounded-lg bg-black-500 px-5 py-2 text-lg text-white shadow-2xl shadow-black-200 hover:shadow-black-100;
+  }
+
+  .field-btn_arrow {
+    @apply h-2.5 w-2.5 object-contain brightness-0 invert;
+  }
+
+  /*  footer */
+  .social-icon {
+    @apply flex h-12 w-12 items-center justify-center rounded-full border border-black-200 bg-black-300;
+  }
+}
+
+.waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.arrow-gradient {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1) 10%,
+    rgba(255, 255, 255, 0.000025) 50%,
+    rgba(255, 255, 255, 0.000025) 50%,
+    rgba(255, 255, 255, 0.025) 100%
+  );
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
