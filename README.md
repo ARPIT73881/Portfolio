@@ -21,24 +21,31 @@ Welcome to my personal portfolio website, showcasing my work, projects, and skil
 1. 🤖 [Introduction](#introduction)
 2. ⚙️ [Tech Stack](#techstack)
 3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quickstart)
-5. 🔗 [Links](#links)
-6. 🚀 [Contributing](#contribute)
+4. 🔗 [Links](#links)
+5. 🚀 [Contributing](#contribute)
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Built with React.js for handling the user interface, Three.js for rendering 3D elements, and styled with TailwindCSS, the 3D Minimalistic portfolio is a website project. The primary goal is to demonstrate the developer's skills in a unique manner that creates a lasting impact.
+Built with React.js for handling the user interface, Three.js for rendering 3D elements, and styled with TailwindCSS, the 3D Minimalistic portfolio is a website project. 
+
+The primary goal is to demonstrate the developer's skills in a unique manner that creates a lasting impact.
 
 ## <a name="techstack">⚙️ Tech Stack</a>
 
 This website is built using the following technologies:
 
 - **[Node](https://nodejs.org/)** : A JavaScript runtime built on Chrome's V8 engine that allows you to run JavaScript on the server-side for building scalable network applications.
+
 - **[Vite](https://vitejs.dev/)** : Fast and modern build tool for front-end development.
+
 - **[React](https://reactjs.org/)** : JavaScript library for building user interfaces.
+
 - **[React Three Fiber](https://github.com/pmndrs/react-three-fiber)** : React renderer for Three.js, enabling the use of 3D graphics in React.
+
 - **[Three.js](https://threejs.org/)** : A JavaScript library for creating 3D graphics in the browser.
+
 - **[React Three Drei](https://github.com/pmndrs/drei)** : A collection of useful helpers and abstractions for working with React Three Fiber.
+
 - **[Tailwind CSS](https://tailwindcss.com/)** : Utility-first CSS framework for building responsive, custom designs.
 
 ## <a name="features">🔋 Features</a>
@@ -59,55 +66,6 @@ An eye-catching 3D hacker room that responds to mouse movements, surrounded by a
 👉 **Clean Footer** : A minimalist design featuring social media links for easy networking.
 
 👉 **Fully Responsive** : Optimized layout ensuring a smooth experience across all devices, from desktop to mobile.
-
-and many more, including code architecture and reusability
-
-## <a name="quickstart">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/)
-
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/arpit73881/portfolio.git
-cd portfolio
-```
-
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Set Up Environment Variables**
-
-Create a new file named `.env` in the root of your project and add the following content:
-
-```env
-VITE_APP_EMAILJS_USERID=your_emailjs_user_id
-VITE_APP_EMAILJS_TEMPLATEID=your_emailjs_template_id
-VITE_APP_EMAILJS_RECEIVERID=your_emailjs_receiver_id
-```
-
-Replace the placeholder values with your actual EmailJS credentials. You can obtain these credentials by signing up on the [EmailJS website](https://www.emailjs.com/).
-
-**Running the Project**
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
 
 ## <a name="links">🔗 Links</a>
 
