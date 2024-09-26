@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-   <a href="https://getarpit.netlify.app" target="_blank"><img src="https://i.ibb.co/KsZ57sJ/demo.png" alt="Main-Cover" border="0"></a>
+   <a href="https://getarpit.netlify.app" target="_blank"><img src="https://github.com/user-attachments/assets/78738a79-e735-4bde-bc66-8f8c103d5ab3" alt="Main-Cover" border="0"></a>
   <br />
   <br/>
 
