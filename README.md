@@ -87,6 +87,6 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-### Credits
+## <a name="credits"> 🫡 Credits</a>
 
 This portfolio was inspired by the work of [Adrian Hajdin](https://github.com/adrianhajdin). Their creativity and innovation motivated me to build my own version.
