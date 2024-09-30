@@ -236,7 +236,7 @@ export const myProjects = [
     title: 'Foodify',
     desc: 'A sleek app designed for food lovers to share and explore recipes. Users can add their own dishes, vote on their favorites, and discover trending recipes in the community.',
     subdesc:
-      'Developed with HTML, CSS, and Figma for design, this app offers a visually appealing interface. It’s a perfect starting point for a side project or business in the food industry.',
+      'Developed with HTML, CSS, JavaScript and Figma for design, this app offers a visually appealing interface. It’s a perfect starting point for a side project or business in the food industry.',
     href: 'https://omnifood-getarpit.netlify.app/',
     texture: '/textures/project/project5.mp4',
     logo: '/assets/project-logo5.svg',
@@ -259,6 +259,11 @@ export const myProjects = [
       },
       {
         id: 3,
+        name: 'JavaScript',
+        path: '/assets/logo-js.svg',
+      },
+      {
+        id: 4,
         name: 'Figma',
         path: '/assets/logo-figma.svg',
       },
