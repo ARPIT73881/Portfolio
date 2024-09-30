@@ -85,7 +85,7 @@ const Contact = () => {
           </p>
 
           {/* Form with onSubmit handler */}
-          <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7" name="contact" netlify>
+          <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
             {/* Full Name field */}
             <label className="space-y-3">
               <span className="field-label">Full Name</span>
